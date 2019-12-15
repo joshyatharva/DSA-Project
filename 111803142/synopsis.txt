@@ -1,0 +1,22 @@
+PROJECT NAME : diff and patch
+MIS 	     : 111803142
+
+[SYNOPSIS]
+diff : compare files line by line
+1) -y,
+              output in two columns
+2) -c,
+              output NUM (default 3) lines of copied context
+3) -w,
+              ignore all white space
+4) -b,
+              ignore changes in the amount of white space
+5) -i, 
+              ignore case differences in file contents
+6) -u, 	
+	      output NUM (default 3) lines of unified context
+B)patch : apply a diff file to an original
+patch  takes a patch file patchfile containing a difference listing produced by the diff program and applies those differences to one or more original files, producing patched versions.
+Normally the patched versions are put in place of the originals.
+Backups can be made.
+
