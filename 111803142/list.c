@@ -28,6 +28,7 @@ int own_str_cmp(char *str1, char *str2, char ch){
 				
 			if(str1[i] == str2[j]){
 				i++;
+				//increment j
 				j++;
 			}
 			else

@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include "list.h"
-
+//function to print line
 void printline(char *str){ 
 	int i = 0;							
 	for(i = 0; i < strlen(str); i++)
 		printf("%c", str[i]);
 		printf("\n");
 }
-
+//function to print line with spaces
 void print_with_spaces(char *str){
 	int i = 0, l = 0;
 	if(str == NULL){
@@ -31,7 +31,7 @@ void print_with_spaces(char *str){
 	printf("\t\t");
 }
 
-
+//function to find the diff
 void getdiff(list_lcs l, list l1, list l2){
 	node_lcs *ptr = l.rear;
 	int k1 = length(l1), k2 = length(l2);
@@ -559,6 +559,8 @@ void _ydiff(list_lcs l, list l1, list l2){
 								}
 							}
 							else{
+
+								//call print line with spaces
 								print_with_spaces(ptr->data);
 								if(qtr->line < k2){
 									printf("| ");

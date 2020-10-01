@@ -2,9 +2,9 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "list.h"
 #include <sys/stat.h>
 #include <sys/types.h>
-#include "list.h"
 
 int countlines(int fd) {
 	int count = 0;
@@ -43,4 +43,4 @@ char *readline(int fd, int flag_w) {
 	}
 	return s;
 }
-
+//end of file
