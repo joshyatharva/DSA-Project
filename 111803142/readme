@@ -2,3 +2,4 @@
 	       2) Then run ./diffit file_1 file_2
 2. For patch  : 1) Run "make patch"
 		2) Then run ./patchit file_1 patch_file
+111803144 Manas Nighrunkar
